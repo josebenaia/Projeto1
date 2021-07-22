@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    background-color: #283E52;
+    padding:30px 2%;
+}
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fundo{
+    width: 100%;
+    height: 501px;
+    background-image: url('../image/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+form{
+    width: 347px;
+    height: 110%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -5%;
+    border-radius: 21px;
+    margin-right: 30px;
+}
+form h2{
+    background-color: #FD9B05;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #283E52;
+    text-align: center;
+}
+.box-input{
+    margin: 30px;
+}
+.box-input p{
+    font-size: 14px;
+    color: #283E52;
+}
+.box-input input{
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #283E52;
+    padding-left: 7px;
+    outline: none;
+    margin-top: 5px;
+}
+.box-input input::placeholder{
+    font-size: 12px;
+    color: #A3A8AD;
+}
+.box-input:nth-of-type(4){
+    margin-top: 50px;
+    text-align: center;
+}
+.box-input input[type='submit']{
+    max-width: 169px;
+    padding: 0;
+    border-radius: 3px;
+    background: #283E52;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.box-input input[type='submit']:hover{
+    background-color: #FD9B05;
+    color: #283E52;
+    transition: 0.3s ease;   
+}
+form h4{
+    font-size: 10px;
+    color: #283E52;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-weight: 300;
+}
+.sesao2{
+    padding: 70px;
+    background-color: #FD9B05;
+    text-align: center;
+    color: #242F41;
+}
+.mosaico{
+    width: 100%;
+    background-color: #242F41;
+
+    display: flex;
+    align-items: center;
+}
+.mosaico:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+.box-1{
+    width: 60%;
+    height: 251px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-2{
+    width: 40%;
+    height: 251px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+.linguagem{
+    padding: 30px 20px;
+    background-color: #242F41;
+    border-top: 4px solid #969FA7;
+    text-align: center;
+}
+.liguagem-a a{
+    text-decoration: none;
+    font-size: 12px;
+    border-right: 1px solid #E9E9E9;
+    color: #E9E9E9;
+    padding: 0 5px;
+}
+.liguagem-a a:hover{
+    color: #d1d1d1;
+}
+footer{
+    padding: 20px;
+    background-color: #202D39;
+}
+footer p{
+    text-align: center;
+    font-size: 12px;
+    color: #B1B1B1;
+}
+
+
+@media screen and (max-width:1024px){
+        form{
+            margin: 0 5%;
+            height: 100%;
+            top: 0;
+    
+        }
+        form h4{
+            margin: 20px 30px;
+        }
+        .fundo{
+            height: auto;
+            padding: 20px 0;
+
+            align-items: center;
+            justify-content: center;
+        }
+        .sesao2{
+            padding: 20px;
+        }
+        .mosaico{
+            flex-direction: column;
+            width: 100%;
+        }
+        .box-1,.box-2{
+            width: 100%;
+        }
+        .mosaico:nth-of-type(2){
+            flex-direction: column;
+        }
+        .box-2 p{
+            max-width: 500px;
+        }
+}
+@media screen and (max-width:500px){
+    header > .container{
+        flex-direction: column;
+    }
+    header img{
+        width: 50px;
+    }
+    header img:nth-of-type(2){
+        width: 22px;
+        margin-top: 10px;
+    }
+    form h2{
+        font-size: 14px;
+    }
+    .box-input{
+        margin: 20px 20px;
+    }
+    .box-input p{
+        font-size: 9px;
+    }
+    .box-input input::placeholder{
+        font-size: 9px;
+    }
+    .box-input:nth-of-type(1){
+        margin-top: 40px;
+    }
+    .box-input:nth-of-type(4){
+        margin-top: 30px;
+        text-align: center;
+    }
+    form h4{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .sesao2{
+        padding: 30px 20px;
+    }
+    .sesao2 h2{
+        font-size: 13px;
+    }
+    .sesao2 p{
+        
+        font-size: 12px;
+    }
+    .box-2{
+        height: auto;
+        padding: 40px 5%;
+        text-align: center;
+    }
+    .box-2 p{
+        font-size: 11px;
+    }
+    .linguagem{
+        display: none;
+    }
+    footer p{
+        font-size: 7px;
+    }
+}
